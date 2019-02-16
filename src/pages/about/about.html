@@ -1,0 +1,84 @@
+<ion-header no-border>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button fill="clear" size="large">
+        <ion-icon slot="icon-only" name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button fill="clear" size="large">
+        <ion-icon slot="icon-only" name="more"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Beaver Brae Secondary</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content fullscreen parallax-header>
+
+  <div class="header-image"></div>
+
+  <div class="main-content">
+
+      <ion-segment [(ngModel)]="category">
+          <ion-segment-button value="gear">
+              Notifications
+          </ion-segment-button>
+          <ion-segment-button value="clothing">
+              Twitter
+          </ion-segment-button>
+          <ion-segment-button value="nutrition">
+              Facebook
+          </ion-segment-button>
+      </ion-segment>
+
+      <ion-card *ngFor="let card of cards">
+
+        <ion-item>
+          <ion-avatar item-left>
+            <img src="https://banner2.kisspng.com/20180403/awe/kisspng-computer-icons-avatar-male-super-b-5ac405d5122261.8229479815227959890743.jpg"/>
+          </ion-avatar>
+          <ion-card-header>
+            <ion-card-title>Josh Morony</ion-card-title>
+            <ion-card-subtitle>November 5, 1955</ion-card-subtitle>
+          </ion-card-header>
+          </ion-item>
+
+
+        <img src="http://images.pexels.com/photos/158063/bellingrath-gardens-alabama-landscape-scenic-158063.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"/>
+
+        
+        <ion-card-content>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+
+          <ion-row>
+            <ion-col>
+                <ion-button color="medium" fill="clear" size="small">
+                    <ion-icon slot="start" name="thumbs-up"></ion-icon>
+                    12 Likes
+                  </ion-button>
+            </ion-col>
+            <ion-col>
+                <ion-button color="medium" fill="clear" size="small">
+                    <ion-icon slot="start" name="chatbubbles"></ion-icon>
+                    4 Comments
+                  </ion-button>
+            </ion-col>
+            <ion-col center text-center>
+              <ion-note>
+                11h ago
+              </ion-note>
+            </ion-col>
+          </ion-row>
+          </ion-card-content>
+
+        
+
+      
+
+      </ion-card>
+
+  </div>
+
+</ion-content>

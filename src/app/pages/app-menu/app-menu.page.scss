@@ -1,0 +1,46 @@
+.background-gradient {
+    --background: -webkit-linear-gradient(-55deg, #50a2a7 35%, #e9b44c 100%);
+
+    ::ng-deep * {
+        --background: transparent !important;
+    }
+}
+
+.border-none, .toolbar-background{
+    --background: transparent;
+    --border-width: 0;
+}
+ion-list {
+    padding: 0;
+    background-color: transparent;
+
+    ion-item-sliding {
+        //border-bottom: 1px solid #1f7f93;
+        background: transparent;
+    }
+}
+
+ion-toolbar {
+    border-bottom: 1px solid var(--ion-color-secondary-contrast);
+    a {
+        font-size: 0.8em;
+        vertical-align: top;
+    }
+    ion-back-button {
+        --color: var(--ion-color-secondary-contrast) !important;
+    }
+}
+
+ion-icon {
+    width: 30px;
+    margin-right: 10px;
+}
+
+:host {
+    --color: var(--ion-color-secondary-contrast) !important;
+
+    a, button, h4, ion-item, .button-inner {
+        color: var(--ion-color-secondary-contrast) !important;
+    }
+}
+ 
